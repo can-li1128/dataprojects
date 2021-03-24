@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sentiment lexicon on Can Li</title>
+    <link>https://can-li1128.github.io/dataprojects/tags/sentiment-lexicon/</link>
+    <description>Recent content in sentiment lexicon on Can Li</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://can-li1128.github.io/dataprojects/tags/sentiment-lexicon/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project 3: Text Analysis with Barry&#39;s Blog</title>
+      <link>https://can-li1128.github.io/dataprojects/post/chapter-3/</link>
+      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://can-li1128.github.io/dataprojects/post/chapter-3/</guid>
+      <description>Overview Text analysis techniques generate numeric summaries of text data and apply visualization to present these summaries. This a text analysis project with Barry Pomeroy&amp;rsquo;s blog entry called My Brother&amp;rsquo;s Dinner with Andre.
+I used web scraping to harvest the blog entry, transformed the text into word units, then used sentiments lexicons AFINN, bing, and nrc to analyze the text. Steps are detailed below.
+Part 1: Text Analysis Load libraries Use the following libraries.</description>
+    </item>
+    
+  </channel>
+</rss>

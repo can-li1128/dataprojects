@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Boxplot on Can Li</title>
+    <link>https://can-li1128.github.io/dataprojects/tags/boxplot/</link>
+    <description>Recent content in Boxplot on Can Li</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://can-li1128.github.io/dataprojects/tags/boxplot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project 2: Systolic Blood Pressure</title>
+      <link>https://can-li1128.github.io/dataprojects/post/chapter-2/</link>
+      <pubDate>Sun, 17 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://can-li1128.github.io/dataprojects/post/chapter-2/</guid>
+      <description>Overview This report analyzes blood pressure data from the survey collected by the United States National Center for Health Statistics (NCHS). This center has conducted a series of health and nutrition surveys since the 1960’s.
+Starting in 1999, about 5,000 individuals of all ages have been interviewed every year and then they complete the health examination component of the survey. Part of this dataset is made available via the NHANES package.</description>
+    </item>
+    
+  </channel>
+</rss>

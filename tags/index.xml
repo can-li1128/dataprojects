@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Can Li</title>
+    <link>https://can-li1128.github.io/dataprojects/tags/</link>
+    <description>Recent content in Tags on Can Li</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://can-li1128.github.io/dataprojects/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>decision tree</title>
+      <link>https://can-li1128.github.io/dataprojects/tags/decision-tree/</link>
+      <pubDate>Tue, 23 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://can-li1128.github.io/dataprojects/tags/decision-tree/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>machine learning</title>
+      <link>https://can-li1128.github.io/dataprojects/tags/machine-learning/</link>
+      <pubDate>Tue, 23 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://can-li1128.github.io/dataprojects/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Titanic</title>
+      <link>https://can-li1128.github.io/dataprojects/tags/titanic/</link>
+      <pubDate>Tue, 23 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://can-li1128.github.io/dataprojects/tags/titanic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bin smoothing</title>
+      <link>https://can-li1128.github.io/dataprojects/tags/bin-smoothing/</link>
+      <pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://can-li1128.github.io/dataprojects/tags/bin-smoothing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>trend detection</title>
+      <link>https://can-li1128.github.io/dataprojects/tags/trend-detection/</link>
+      <pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://can-li1128.github.io/dataprojects/tags/trend-detection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rvest package</title>
+      <link>https://can-li1128.github.io/dataprojects/tags/rvest-package/</link>
+      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://can-li1128.github.io/dataprojects/tags/rvest-package/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sentiment analysis</title>
+      <link>https://can-li1128.github.io/dataprojects/tags/sentiment-analysis/</link>
+      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://can-li1128.github.io/dataprojects/tags/sentiment-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sentiment lexicon</title>
+      <link>https://can-li1128.github.io/dataprojects/tags/sentiment-lexicon/</link>
+      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://can-li1128.github.io/dataprojects/tags/sentiment-lexicon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>text analysis</title>
+      <link>https://can-li1128.github.io/dataprojects/tags/text-analysis/</link>
+      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://can-li1128.github.io/dataprojects/tags/text-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tidytext package</title>
+      <link>https://can-li1128.github.io/dataprojects/tags/tidytext-package/</link>
+      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://can-li1128.github.io/dataprojects/tags/tidytext-package/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web scraping</title>
+      <link>https://can-li1128.github.io/dataprojects/tags/web-scraping/</link>
+      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://can-li1128.github.io/dataprojects/tags/web-scraping/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Boxplot</title>
+      <link>https://can-li1128.github.io/dataprojects/tags/boxplot/</link>
+      <pubDate>Sun, 17 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://can-li1128.github.io/dataprojects/tags/boxplot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>summary report</title>
+      <link>https://can-li1128.github.io/dataprojects/tags/summary-report/</link>
+      <pubDate>Sun, 17 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://can-li1128.github.io/dataprojects/tags/summary-report/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>caret package</title>
+      <link>https://can-li1128.github.io/dataprojects/tags/caret-package/</link>
+      <pubDate>Fri, 15 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://can-li1128.github.io/dataprojects/tags/caret-package/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iris</title>
+      <link>https://can-li1128.github.io/dataprojects/tags/iris/</link>
+      <pubDate>Fri, 15 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://can-li1128.github.io/dataprojects/tags/iris/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

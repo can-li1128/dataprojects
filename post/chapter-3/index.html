@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Project 3: Text Analysis with Barry&#39;s Blog | Can Li</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Blog">
+    <meta name="generator" content="Hugo 0.80.0" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+
+  
+  
+    <link rel="stylesheet" href="https://can-li1128.github.io/dataprojects/ananke/dist/main.css_5c99d70a7725bacd4c701e995b969fea.css" >
+  
+
+
+
+
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="Project 3: Text Analysis with Barry&#39;s Blog" />
+<meta property="og:description" content="Blog" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://can-li1128.github.io/dataprojects/post/chapter-3/" />
+<meta property="article:published_time" content="2021-02-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-02-01T00:00:00+00:00" /><meta property="og:site_name" content="Can Li" />
+<meta itemprop="name" content="Project 3: Text Analysis with Barry&#39;s Blog">
+<meta itemprop="description" content="Blog">
+<meta itemprop="datePublished" content="2021-02-01T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-02-01T00:00:00+00:00" />
+<meta itemprop="wordCount" content="668">
+
+
+
+<meta itemprop="keywords" content="web scraping,text analysis,sentiment analysis,sentiment lexicon,rvest package,tidytext package," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Project 3: Text Analysis with Barry&#39;s Blog"/>
+<meta name="twitter:description" content="Blog"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  
+  
+  <header class="cover bg-top" style="background-image: url('https://can-li1128.github.io/dataprojects/images/blocks.jpg');">
+    <div class="pb3-m pb6-l bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://can-li1128.github.io/dataprojects/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Can Li
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://can-li1128.github.io/dataprojects/about/" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://can-li1128.github.io/dataprojects/contact/" title="Contact page">
+              Contact
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://can-li1128.github.io/dataprojects/post/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        PROJECTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=https://can-li1128.github.io/dataprojects/post/chapter-3/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=https://can-li1128.github.io/dataprojects/post/chapter-3/&amp;text=Project%203:%20Text%20Analysis%20with%20Barry%27s%20Blog" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://can-li1128.github.io/dataprojects/post/chapter-3/&amp;title=Project%203:%20Text%20Analysis%20with%20Barry%27s%20Blog" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Project 3: Text Analysis with Barry&#39;s Blog</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2021-02-01T00:00:00Z">February 1, 2021</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h3 id="overview"><strong>Overview</strong></h3>
+<p>Text analysis techniques generate numeric summaries of text data and apply visualization to present these summaries. This a text analysis project with Barry Pomeroy&rsquo;s blog entry called <a href="http://barrypomeroy.com/blog/my-brothers-dinner-with-andre">My
+Brother&rsquo;s Dinner with Andre</a>.</p>
+<p>I used web scraping to harvest the blog entry, transformed the text into
+word units, then used sentiments lexicons <em>AFINN</em>, <em>bing</em>, and <em>nrc</em> to
+analyze the text. Steps are detailed below.</p>
+<h3 id="part-1-text-analysis"><strong>Part 1: Text Analysis</strong></h3>
+<h5 id="load-libraries"><strong>Load libraries</strong></h5>
+<p>Use the following libraries. <em>rvest</em> package is for web scraping, and
+<em>tidytext</em> package is used to convert free text into tidy table.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">      <span style="color:#a6e22e">library</span>(tidyverse)
+      <span style="color:#a6e22e">library</span>(rvest)
+      <span style="color:#a6e22e">library</span>(tidytext)
+</code></pre></div><h5 id="read-in-the-blog-entry"><strong>Read in the blog entry</strong></h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">    url <span style="color:#f92672">&lt;-</span> <span style="color:#e6db74">&#34;http://barrypomeroy.com/blog/my-brothers-dinner-with-andre/&#34;</span>
+    dinner <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read_html</span>(url)
+</code></pre></div><h5 id="select-html-nodes-needed"><strong>Select html nodes needed</strong></h5>
+<p>Use selectorGadgets to find the html node that contain text. In this
+case, the web page is very clean since all the text are contained in
+p nodes. Once paragraph node set are harvested, they are transformed into a
+&ldquo;character&rdquo; vector.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">    para_nodes <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">html_nodes</span>(dinner, <span style="color:#e6db74">&#34;p&#34;</span>)
+    para <span style="color:#f92672">&lt;-</span> para_nodes <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">html_text</span>()
+</code></pre></div><h5 id="transform-text-and-extract-words"><strong>Transform text and extract words</strong></h5>
+<p>Vector is transformed into a table, each observation contains a
+paragraph. Use <em>unnest_tokens()</em> from <em>rvest</em> package to create a tidy
+table.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">    df_para <span style="color:#f92672">&lt;-</span> tibble<span style="color:#f92672">::</span><span style="color:#a6e22e">enframe</span>(para)
+    wd <span style="color:#f92672">&lt;-</span> df_para <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">unnest_tokens</span>(word, value)
+    <span style="color:#a6e22e">head</span>(wd)
+</code></pre></div><pre><code>##    name word        
+## 1     1 i           
+## 2     1 have        
+## 3     1 a           
+## 4     1 special     
+## 5     1 relationship
+## 6     1 with
+</code></pre>
+<h5 id="word-count-analysis"><strong>Word count analysis</strong></h5>
+<p>Number of essential words (minus stop words)</p>
+<pre><code>## [1] 427
+</code></pre>
+<p>Most frequently used words (evidently these appear to be mostly stop
+words)</p>
+<pre><code>##    word      n
+##  1 the      81
+##  2 and      40
+##  3 of       38
+##  4 his      34
+##  5 he       33
+##  6 to       30
+##  7 a        26
+##  8 in       24
+##  9 film     22
+## 10 i        22
+## # ... with 473 more rows
+</code></pre>
+<p>Least frequently used words</p>
+<pre><code>##    word           n
+##  1 1981           1
+##  2 accident       1
+##  3 accurate       1
+##  4 actors         1
+##  5 adventures     1
+##  6 affirmed       1
+##  7 affront        1
+##  8 aged           1
+##  9 ago            1
+## 10 allowed        1
+## # ... with 473 more rows
+</code></pre>
+<h5 id="after-getting-rid-of-stop-words"><strong>AFTER getting rid of stop words</strong></h5>
+<p>Use <em>anti_join</em> to create an essential words data frame</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">    rid_stop <span style="color:#f92672">&lt;-</span> wd <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">anti_join</span>(stop_words)
+</code></pre></div><p>Most frequently used essential words</p>
+<pre><code>##    word            n
+##  1 film           22
+##  2 life           13
+##  3 brother's       7
+##  4 wally's         7
+##  5 brother         6
+##  6 andre           5
+##  7 andre's         5
+##  8 description     5
+##  9 dinner          4
+## 10 family          4
+## # ... with 293 more rows
+</code></pre>
+<p>Lest frequently used essential words</p>
+<pre><code>##   word            n
+## 1 windbag         1
+## 2 witnesses       1
+## 3 wonderful       1
+## 4 wonderfully     1
+## 5 word            1
+## 6 words           1
+</code></pre>
+<h3 id="part-2-sentiment-analysis"><strong>Part 2: Sentiment Analysis</strong></h3>
+<ul>
+<li>Using a dictionary based approach to analyze the sentiment of a text, opinions and emotions,
+is ONE of the methods for sentiment analysis.</li>
+<li>The <em>tidytext</em> package provides several sentiment lexicons. Three general-purpose lexicons are AFINN, bing, and nrc. In this report, I only use <em>nrc</em> lexicon as an example. There are some slight
+differences in comparison with the other two dictionaries.</li>
+<li>These lexicons are bases for sentiment analysis with ample
+flexibility to have words added or withdrawn according to the nature
+of the text, words, and project.</li>
+</ul>
+<h5 id="nrc-negative"><strong>nrc negative</strong></h5>
+<p>Use <em>nrc</em> lexicon to identify negative words</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">    nrc_neg <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">get_sentiments</span>(<span style="color:#e6db74">&#34;nrc&#34;</span>) <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">filter</span>(sentiment <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;negative&#34;</span>)
+</code></pre></div><pre><code>##    word         n
+##  1 accident     1
+##  2 affront      1
+##  3 argue        1
+##  4 bore         1
+##  5 broke        1
+##  6 confined     1
+##  7 contrary     1
+##  8 derision     1
+##  9 despise      1
+## 10 diatribe     1
+## # ... with 21 more rows
+</code></pre>
+<h5 id="nrc-positive"><strong>nrc positive</strong></h5>
+<pre><code>##    word             n
+##  1 accurate         1
+##  2 appreciation     1
+##  3 attention        1
+##  4 beauty           1
+##  5 brother          1
+##  6 build            1
+##  7 childhood        1
+##  8 confirmed        1
+##  9 delight          1
+## 10 dinner           1
+## # ... with 34 more rows
+</code></pre>
+<ul class="pa0">
+  
+   <li class="list">
+     <a href="https://can-li1128.github.io/dataprojects/tags/web-scraping" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">web scraping</a>
+   </li>
+  
+   <li class="list">
+     <a href="https://can-li1128.github.io/dataprojects/tags/text-analysis" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">text analysis</a>
+   </li>
+  
+   <li class="list">
+     <a href="https://can-li1128.github.io/dataprojects/tags/sentiment-analysis" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">sentiment analysis</a>
+   </li>
+  
+   <li class="list">
+     <a href="https://can-li1128.github.io/dataprojects/tags/sentiment-lexicon" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">sentiment lexicon</a>
+   </li>
+  
+   <li class="list">
+     <a href="https://can-li1128.github.io/dataprojects/tags/rvest-package" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">rvest package</a>
+   </li>
+  
+   <li class="list">
+     <a href="https://can-li1128.github.io/dataprojects/tags/tidytext-package" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">tidytext package</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-dark-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://can-li1128.github.io/dataprojects/" >
+    &copy;  Can Li 2021 
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

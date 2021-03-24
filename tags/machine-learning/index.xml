@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>machine learning on Can Li</title>
+    <link>https://can-li1128.github.io/dataprojects/tags/machine-learning/</link>
+    <description>Recent content in machine learning on Can Li</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://can-li1128.github.io/dataprojects/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project 5: Titanic Decision Tree</title>
+      <link>https://can-li1128.github.io/dataprojects/post/chapter-5/</link>
+      <pubDate>Tue, 23 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://can-li1128.github.io/dataprojects/post/chapter-5/</guid>
+      <description>Overview The Titanic was a British ocean liner that struck an iceberg and sunk on its maiden voyage in 1912 from the United Kingdom to New York. More than 1,500 of the estimated 2,224 passengers and crew died in the accident, making this one of the largest maritime disasters ever outside of war. The ship carried a wide range of passengers of all ages and both genders, from luxury travelers in first-class to immigrants in the lower classes.</description>
+    </item>
+    
+    <item>
+      <title>Project 1: Iris Identification</title>
+      <link>https://can-li1128.github.io/dataprojects/post/chapter-1/</link>
+      <pubDate>Fri, 15 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://can-li1128.github.io/dataprojects/post/chapter-1/</guid>
+      <description>Overview Applying machine learning method, this project takes sepal and petal measurement data from the famous (Fisher&amp;rsquo;s or Anderson&amp;rsquo;s) iris data set to predict species, versicolor or virginica.
+A continuous sequence of cutoff points were used to find the best measurement that produces highest accuracy on training data; then the same measurement was applied to test data to evaluate the algorithm.
+Two specific features are proved to be most useful in determining iris species.</description>
+    </item>
+    
+  </channel>
+</rss>

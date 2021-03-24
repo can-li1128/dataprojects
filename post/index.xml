@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Can Li</title>
+    <link>https://can-li1128.github.io/dataprojects/post/</link>
+    <description>Recent content in Projects on Can Li</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Mar 2017 12:00:00 -0500</lastBuildDate><atom:link href="https://can-li1128.github.io/dataprojects/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project 5: Titanic Decision Tree</title>
+      <link>https://can-li1128.github.io/dataprojects/post/chapter-5/</link>
+      <pubDate>Tue, 23 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://can-li1128.github.io/dataprojects/post/chapter-5/</guid>
+      <description>Overview The Titanic was a British ocean liner that struck an iceberg and sunk on its maiden voyage in 1912 from the United Kingdom to New York. More than 1,500 of the estimated 2,224 passengers and crew died in the accident, making this one of the largest maritime disasters ever outside of war. The ship carried a wide range of passengers of all ages and both genders, from luxury travelers in first-class to immigrants in the lower classes.</description>
+    </item>
+    
+    <item>
+      <title>Project 4: Brexit Poll Data Analysis</title>
+      <link>https://can-li1128.github.io/dataprojects/post/chapter-4/</link>
+      <pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://can-li1128.github.io/dataprojects/post/chapter-4/</guid>
+      <description>Overview In June 2016, the United Kingdom (UK) held a referendum to determine whether the country would “Remain” in or “Leave” the European Union (EU). This referendum is commonly known as Brexit. Although the media and others interpreted poll results as forecasting “Remain” ( p&amp;gt;0.5, p indicating the proportion voted “Remain”) , the actual proportion that voted “Remain” was only 48.1% (p=0.481) and the UK thus voted to leave the EU.</description>
+    </item>
+    
+    <item>
+      <title>Project 3: Text Analysis with Barry&#39;s Blog</title>
+      <link>https://can-li1128.github.io/dataprojects/post/chapter-3/</link>
+      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://can-li1128.github.io/dataprojects/post/chapter-3/</guid>
+      <description>Overview Text analysis techniques generate numeric summaries of text data and apply visualization to present these summaries. This a text analysis project with Barry Pomeroy&amp;rsquo;s blog entry called My Brother&amp;rsquo;s Dinner with Andre.
+I used web scraping to harvest the blog entry, transformed the text into word units, then used sentiments lexicons AFINN, bing, and nrc to analyze the text. Steps are detailed below.
+Part 1: Text Analysis Load libraries Use the following libraries.</description>
+    </item>
+    
+    <item>
+      <title>Project 2: Systolic Blood Pressure</title>
+      <link>https://can-li1128.github.io/dataprojects/post/chapter-2/</link>
+      <pubDate>Sun, 17 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://can-li1128.github.io/dataprojects/post/chapter-2/</guid>
+      <description>Overview This report analyzes blood pressure data from the survey collected by the United States National Center for Health Statistics (NCHS). This center has conducted a series of health and nutrition surveys since the 1960’s.
+Starting in 1999, about 5,000 individuals of all ages have been interviewed every year and then they complete the health examination component of the survey. Part of this dataset is made available via the NHANES package.</description>
+    </item>
+    
+    <item>
+      <title>Project 1: Iris Identification</title>
+      <link>https://can-li1128.github.io/dataprojects/post/chapter-1/</link>
+      <pubDate>Fri, 15 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://can-li1128.github.io/dataprojects/post/chapter-1/</guid>
+      <description>Overview Applying machine learning method, this project takes sepal and petal measurement data from the famous (Fisher&amp;rsquo;s or Anderson&amp;rsquo;s) iris data set to predict species, versicolor or virginica.
+A continuous sequence of cutoff points were used to find the best measurement that produces highest accuracy on training data; then the same measurement was applied to test data to evaluate the algorithm.
+Two specific features are proved to be most useful in determining iris species.</description>
+    </item>
+    
+    <item>
+      <title>Project 6: Tbd</title>
+      <link>https://can-li1128.github.io/dataprojects/post/chapter-6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://can-li1128.github.io/dataprojects/post/chapter-6/</guid>
+      <description>In Progress</description>
+    </item>
+    
+  </channel>
+</rss>

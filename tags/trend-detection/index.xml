@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>trend detection on Can Li</title>
+    <link>https://can-li1128.github.io/dataprojects/tags/trend-detection/</link>
+    <description>Recent content in trend detection on Can Li</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://can-li1128.github.io/dataprojects/tags/trend-detection/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project 4: Brexit Poll Data Analysis</title>
+      <link>https://can-li1128.github.io/dataprojects/post/chapter-4/</link>
+      <pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://can-li1128.github.io/dataprojects/post/chapter-4/</guid>
+      <description>Overview In June 2016, the United Kingdom (UK) held a referendum to determine whether the country would “Remain” in or “Leave” the European Union (EU). This referendum is commonly known as Brexit. Although the media and others interpreted poll results as forecasting “Remain” ( p&amp;gt;0.5, p indicating the proportion voted “Remain”) , the actual proportion that voted “Remain” was only 48.1% (p=0.481) and the UK thus voted to leave the EU.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>caret package on Can Li</title>
+    <link>https://can-li1128.github.io/dataprojects/tags/caret-package/</link>
+    <description>Recent content in caret package on Can Li</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://can-li1128.github.io/dataprojects/tags/caret-package/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project 1: Iris Identification</title>
+      <link>https://can-li1128.github.io/dataprojects/post/chapter-1/</link>
+      <pubDate>Fri, 15 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://can-li1128.github.io/dataprojects/post/chapter-1/</guid>
+      <description>Overview Applying machine learning method, this project takes sepal and petal measurement data from the famous (Fisher&amp;rsquo;s or Anderson&amp;rsquo;s) iris data set to predict species, versicolor or virginica.
+A continuous sequence of cutoff points were used to find the best measurement that produces highest accuracy on training data; then the same measurement was applied to test data to evaluate the algorithm.
+Two specific features are proved to be most useful in determining iris species.</description>
+    </item>
+    
+  </channel>
+</rss>
