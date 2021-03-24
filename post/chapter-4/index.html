@@ -201,20 +201,23 @@ results. The code in R generate plots.</p>
 <li>
 <p>The spread is the <em>difference</em> in the raw proportion of voters
 choosing “Remain” and the raw proportion choosing “Leave”.</p>
-<h2 id="startdate----enddate---pollster-poll_type-samplesize-remain-leave-undecided">startdate    enddate   pollster poll_type samplesize remain leave undecided</h2>
-<h2 id="1-2016-05-14-2016-05-16-ipsos-mori-telephone-------1002---055--037------005">1 2016-05-14 2016-05-16 Ipsos MORI Telephone       1002   0.55  0.37      0.05</h2>
-<h2 id="2-2016-05-11-2016-05-15--------orb-telephone--------800---055--040------005">2 2016-05-11 2016-05-15        ORB Telephone        800   0.55  0.40      0.05</h2>
-<h2 id="3-2016-02-13-2016-02-16-ipsos-mori-telephone--------497---054--036------010">3 2016-02-13 2016-02-16 Ipsos MORI Telephone        497   0.54  0.36      0.10</h2>
-<h2 id="4-2016-01-23-2016-01-25-ipsos-mori-telephone--------513---055--036------009">4 2016-01-23 2016-01-25 Ipsos MORI Telephone        513   0.55  0.36      0.09</h2>
-<h2 id="5-2016-01-22-2016-01-24-----comres-telephone-------1006---054--036------010">5 2016-01-22 2016-01-24     ComRes Telephone       1006   0.54  0.36      0.10</h2>
-<h2 id="spread">spread</h2>
-<h2 id="1---018">1   0.18</h2>
-<h2 id="2---015">2   0.15</h2>
-<h2 id="3---018">3   0.18</h2>
-<h2 id="4---019">4   0.19</h2>
-<h2 id="5---018">5   0.18</h2>
 </li>
 </ul>
+	    
+<pre><code>    ##    startdate    enddate   pollster poll_type samplesize remain leave undecided
+    ## 1 2016-05-14 2016-05-16 Ipsos MORI Telephone       1002   0.55  0.37      0.05
+    ## 2 2016-05-11 2016-05-15        ORB Telephone        800   0.55  0.40      0.05
+    ## 3 2016-02-13 2016-02-16 Ipsos MORI Telephone        497   0.54  0.36      0.10
+    ## 4 2016-01-23 2016-01-25 Ipsos MORI Telephone        513   0.55  0.36      0.09
+    ## 5 2016-01-22 2016-01-24     ComRes Telephone       1006   0.54  0.36      0.10
+    ##   spread
+    ## 1   0.18
+    ## 2   0.15
+    ## 3   0.18
+    ## 4   0.19
+    ## 5   0.18
+</code></pre>
+
 <h3 id="here-is-the-plot-i-generated-using-method--loess">Here is the plot I generated using method = &ldquo;loess&rdquo;:</h3>
 <p>&ldquo;loess&rdquo; (local weighted regression) is the <em>bin smoothing</em> technique in R to detect trend in the presence of noise, similar to what <em>ksmooth()</em> does, but assuming the smooth function is locally linear rather than constant.</p>
 <figure>
